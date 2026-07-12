@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://6oadsi5rv1g7"]
+
+[ext_resource type="PackedScene" uid="uid://dtqfu63g8ycl5" path="res://mark_23__animated_free.glb" id="1_1wber"]
+
+[node name="Sketchfab_Scene" unique_id=653309664 instance=ExtResource("1_1wber")]
+
+[node name="Object_9" parent="Sketchfab_model/bf2d975137f8485789cd58bed6e8bc8d_fbx/Object_2/RootNode/Object_4/Skeleton3D" parent_id_path=PackedInt32Array(26946064) index="2" unique_id=773507021]
+visible = false
+
+[node name="Object_10" parent="Sketchfab_model/bf2d975137f8485789cd58bed6e8bc8d_fbx/Object_2/RootNode/Object_4/Skeleton3D" parent_id_path=PackedInt32Array(26946064) index="3" unique_id=1832128157]
+visible = false
+
+[node name="Object_11" parent="Sketchfab_model/bf2d975137f8485789cd58bed6e8bc8d_fbx/Object_2/RootNode/Object_4/Skeleton3D" parent_id_path=PackedInt32Array(26946064) index="4" unique_id=1679277312]
+visible = false
+
+[node name="Object_6" parent="Sketchfab_model/bf2d975137f8485789cd58bed6e8bc8d_fbx/Object_2/RootNode/Object_4" parent_id_path=PackedInt32Array(2001282073) index="1" unique_id=518744315]
+visible = false
+
+[node name="Hand_Mesh" parent="Sketchfab_model/bf2d975137f8485789cd58bed6e8bc8d_fbx/Object_2/RootNode/Object_4" parent_id_path=PackedInt32Array(2001282073) index="2" unique_id=1886571636]
+visible = false
+
+[node name="Side" parent="Sketchfab_model/bf2d975137f8485789cd58bed6e8bc8d_fbx/Object_2/RootNode/Object_4" parent_id_path=PackedInt32Array(2001282073) index="3" unique_id=811849006]
+visible = false
+
+[node name="main" parent="Sketchfab_model/bf2d975137f8485789cd58bed6e8bc8d_fbx/Object_2/RootNode/Object_4" parent_id_path=PackedInt32Array(2001282073) index="4" unique_id=139784970]
+visible = false
+
+[node name="mag" parent="Sketchfab_model/bf2d975137f8485789cd58bed6e8bc8d_fbx/Object_2/RootNode/Object_4" parent_id_path=PackedInt32Array(2001282073) index="5" unique_id=1190134429]
+visible = false

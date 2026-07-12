@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://co8ufj0puv3lw"]
+
+[ext_resource type="Texture2D" uid="uid://crt603pf6ln5q" path="res://WhatsApp Image 2026-07-10 at 14.26.45.jpeg" id="1_5sm7p"]
+[ext_resource type="Script" uid="uid://bfikkniq5hvh" path="res://levels.gd" id="1_pbc30"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rxyqc"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_to1vy"]
+
+[node name="Control" type="Control" unique_id=696478606]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pbc30")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=943443870]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+scale = Vector2(0.9020709, 0.9152869)
+texture = ExtResource("1_5sm7p")
+
+[node name="LEVEL1" type="Button" parent="." unique_id=620217947]
+layout_mode = 0
+offset_left = 74.0
+offset_top = 42.0
+offset_right = 286.0
+offset_bottom = 164.0
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_rxyqc")
+text = "LEVEL1"
+
+[node name="QuitButton" type="Button" parent="." unique_id=351669084]
+layout_mode = 0
+offset_left = 860.0
+offset_top = 51.0
+offset_right = 1095.0
+offset_bottom = 170.0
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxTexture_to1vy")
+text = "back"

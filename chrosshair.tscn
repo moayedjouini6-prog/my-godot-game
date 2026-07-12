@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://c0cijcle4pk8l"]
+
+[ext_resource type="Texture2D" uid="uid://dpa1uhr5e8o3n" path="res://crosshair.png" id="1_6753j"]
+
+[node name="Node2D" type="Node2D" unique_id=1734004111]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=294290597]
+offset_left = 509.0
+offset_top = 252.0
+offset_right = 573.0
+offset_bottom = 316.0
+texture = ExtResource("1_6753j")

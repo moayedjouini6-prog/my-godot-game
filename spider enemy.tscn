@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://d2oy42sr5y43g"]
+
+[ext_resource type="PackedScene" uid="uid://d0gde2krij4o1" path="res://spider_enemy.glb" id="1_ktj0u"]
+[ext_resource type="Script" uid="uid://dm6gejjdhdax" path="res://spider_enemy.gd" id="2_846ys"]
+
+[sub_resource type="Animation" id="Animation_7bsit"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sketchfab_model/c8a89897d66e40ce8289970912e4865b_fbx/RootNode/Leg2/outer_leg2/outer_leg_lambert1_02:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, -0.8268442, 1.7577732)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sketchfab_model/c8a89897d66e40ce8289970912e4865b_fbx/RootNode/Leg2/outer_leg2/outer_leg_lambert1_02:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.53622085, -1.9128017e-16, -6.945295e-17)]
+}
+
+[sub_resource type="Animation" id="Animation_kfaw0"]
+resource_name = "forever"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sketchfab_model/c8a89897d66e40ce8289970912e4865b_fbx/RootNode/Leg2/outer_leg2/outer_leg_lambert1_02:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(-0.53622085, -1.9128017e-16, -6.945295e-17), Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sketchfab_model/c8a89897d66e40ce8289970912e4865b_fbx/RootNode/Leg2/outer_leg2/outer_leg_lambert1_02:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, -0.8268442, 1.7577732), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_i7oqs"]
+_data = {
+&"RESET": SubResource("Animation_7bsit"),
+&"forever": SubResource("Animation_kfaw0")
+}
+
+[node name="Sketchfab_Scene" unique_id=1592158333 instance=ExtResource("1_ktj0u")]
+script = ExtResource("2_846ys")
+
+[node name="Enemy_body_lambert1_0" parent="Sketchfab_model/c8a89897d66e40ce8289970912e4865b_fbx/RootNode/Enemy_body" parent_id_path=PackedInt32Array(533428751) index="0" unique_id=1092704456]
+transform = Transform3D(0.82925755, 0.5588667, -3.791244e-17, -0.5588667, 0.82925755, -1.2409333e-16, -3.791244e-17, 1.2409333e-16, 1, -0.47402406, 0.40058804, 0)
+
+[node name="outer_leg_lambert1_02" parent="Sketchfab_model/c8a89897d66e40ce8289970912e4865b_fbx/RootNode/Leg2/outer_leg2" parent_id_path=PackedInt32Array(133073641) index="0" unique_id=742296405]
+transform = Transform3D(1, 1.6717625e-16, -1.6443314e-16, -5.970492e-17, 0.85964555, 0.5108909, 2.2676305e-16, -0.5108909, 0.85964555, 0, -0.8268442, 1.7577732)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1" unique_id=999697193]
+libraries/ = SubResource("AnimationLibrary_i7oqs")

@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dxthkupemvlk3"]
+
+[ext_resource type="Script" uid="uid://c1ugokrb7hbcu" path="res://bullet.gd" id="1_v7oki"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_afb37"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ueked"]
+size = Vector3(0.06983594, 0.055541992, 0.48779297)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ueked"]
+size = Vector3(0.07, 0.056, 0.488)
+
+[node name="bullet" type="Area3D" unique_id=1272388612]
+collision_layer = 0
+script = ExtResource("1_v7oki")
+speed = 3.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1925970897]
+material_override = SubResource("StandardMaterial3D_afb37")
+mesh = SubResource("BoxMesh_ueked")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2002084177]
+shape = SubResource("BoxShape3D_ueked")
